@@ -1,2 +1,5 @@
 node_modules
 coverage
+reports
+selenium-debug.log
+./bin/npm-debug.log

@@ -4,7 +4,8 @@
   "description": "",
   "main": "sum.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "e2e": "./node_modules/.bin/nightwatch"
   },
   "jest": {
     "collectCoverageFrom": [
