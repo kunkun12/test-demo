@@ -4,15 +4,18 @@
   "description": "",
   "main": "sum.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "./node_modules/jest/bin/jest.js --coverage",
     "e2e": "./node_modules/.bin/nightwatch"
   },
   "jest": {
     "collectCoverageFrom": [
-      "**/*.{js,jsx}",
+      "**/src/*.{js,jsx}",
       "!**/node_modules/**",
       "!**/coverage/**",
       "!**/vendor/**"
+    ],
+     "testMatch": [
+      "<rootDir>/unit_test/?(*.)(spec|test).js?(x)"
     ],
     "transform": {
       "^.+\\.js$": "babel-jest"
